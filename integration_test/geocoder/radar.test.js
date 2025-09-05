@@ -34,8 +34,8 @@ describe('Radar geocoder', () => {
     });
   });
 
-  xdescribe('reverse', () => {
-    it('works', async () => {
+  describe('reverse', () => {
+    xit('works', async () => {
       const res = await geocoder.reverse({ lat: 45.521056, lon: -73.610734 });
       expect(res[0]).toBeDefined();
       expect(res[0]).toMatchObject({
