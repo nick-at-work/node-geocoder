@@ -21,7 +21,6 @@ describe('Radar geocoder', () => {
     it('works', async () => {
       const res = await geocoder.geocode('1604 North Loop 1604 E, San Antonio, TX 78232');
       expect(res).toBeDefined();
-      console.dir(res, { depth: null });
       expect(res[0]).toBeDefined();
       expect(res[0]).toMatchObject({
         latitude: 29.60888,
